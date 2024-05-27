@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learn/202/animated_learn_view.dart';
+import 'package:flutter_learn/202/form_learn_view.dart';
+import 'package:flutter_learn/202/image_learn_202.dart';
+import 'package:flutter_learn/202/oop_learn_view.dart';
 import 'package:flutter_learn/202/package_learn_view.dart';
+import 'package:flutter_learn/202/state_manage/state_manage_learn_view.dart';
 import 'package:flutter_learn/202/theme/light_theme.dart';
 import 'package:flutter_learn/202/theme_learn_view.dart';
 
@@ -49,7 +54,7 @@ class MyApp extends StatelessWidget {
       //     systemOverlayStyle: SystemUiOverlayStyle.dark,
       //   ),
       // ),
-      home: ThemeLearnView(),
+      home: FormLearnView(),
     );
   }
 }

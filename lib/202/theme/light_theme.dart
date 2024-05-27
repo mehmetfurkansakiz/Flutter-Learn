@@ -13,6 +13,7 @@ class LightTheme {
             FloatingActionButtonThemeData(backgroundColor: Colors.deepPurple, foregroundColor: Colors.white),
         appBarTheme: AppBarTheme(
           backgroundColor: _lightColors._ultravioletOnsible,
+          titleTextStyle: TextStyle(color: _lightColors._white, fontSize: 24),
           centerTitle: true,
           elevation: 0,
           systemOverlayStyle: SystemUiOverlayStyle.light,
