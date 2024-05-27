@@ -13,3 +13,5 @@
 ## 202
 * Tab tabbar, Nullable, Model Creation
 * Service Usage, Details, Future, try catch etc.
+* Pubdev, Package Usage, Custom Textfield Development etc.
+* Extension, OOP, Mixin, Form Validate
