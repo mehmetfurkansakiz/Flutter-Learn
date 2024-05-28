@@ -50,6 +50,8 @@ class FileItem {
 class FileDownload2 extends IFileDownload with ShareMixin {
   @override
   bool? downloadItem(FileItem? fileItem) {
+    return null;
+
     // TODO: implement downloadItem
   }
 }

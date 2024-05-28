@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class FormLearnView extends StatefulWidget {
@@ -8,7 +9,7 @@ class FormLearnView extends StatefulWidget {
 }
 
 class _FormLearnViewState extends State<FormLearnView> {
-  GlobalKey<FormState> _key = GlobalKey();
+  final GlobalKey<FormState> _key = GlobalKey();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +21,7 @@ class _FormLearnViewState extends State<FormLearnView> {
         autovalidateMode: AutovalidateMode.always,
         child: Column(
           children: [
-            Text("Form Learn View"),
+            const Text("Form Learn View"),
             TextFormField(
               validator: (value) {
                 return FormFieldValidator().isNotEmpty(value);
@@ -47,10 +48,12 @@ class _FormLearnViewState extends State<FormLearnView> {
             ElevatedButton(
                 onPressed: () {
                   if (_key.currentState?.validate() ?? false) {
-                    print('okey');
+                    if (kDebugMode) {
+                      print('okey');
+                    }
                   }
                 },
-                child: Text('Save'))
+                child: const Text('Save'))
           ],
         ),
       ),

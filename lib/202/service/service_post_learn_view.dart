@@ -1,3 +1,5 @@
+// ignore_for_file: unused_element
+
 import 'dart:io';
 
 import 'package:dio/dio.dart';
@@ -17,9 +19,9 @@ class _ServicePostLearnState extends State<ServicePostLearn> {
   late final Dio _networkManager;
   final _baseUrl = 'https://jsonplaceholder.typicode.com/';
 
-  TextEditingController _titleController = TextEditingController();
-  TextEditingController _bodyController = TextEditingController();
-  TextEditingController _userIdController = TextEditingController();
+  final TextEditingController _titleController = TextEditingController();
+  final TextEditingController _bodyController = TextEditingController();
+  final TextEditingController _userIdController = TextEditingController();
 
   @override
   void initState() {
@@ -49,28 +51,28 @@ class _ServicePostLearnState extends State<ServicePostLearn> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(name ?? 'Service Post Learn View'),
-        actions: [_isLoading ? CircularProgressIndicator.adaptive() : const SizedBox.shrink()],
+        title: Text(name),
+        actions: [_isLoading ? const CircularProgressIndicator.adaptive() : const SizedBox.shrink()],
       ),
       body: Column(
         children: [
           TextField(
             controller: _titleController,
-            decoration: InputDecoration(labelText: 'Title'),
+            decoration: const InputDecoration(labelText: 'Title'),
             keyboardType: TextInputType.text,
             textInputAction: TextInputAction.next,
           ),
           TextField(
             controller: _bodyController,
-            decoration: InputDecoration(labelText: 'Body'),
+            decoration: const InputDecoration(labelText: 'Body'),
             keyboardType: TextInputType.text,
             textInputAction: TextInputAction.next,
           ),
           TextField(
             controller: _userIdController,
             keyboardType: TextInputType.number,
-            autofillHints: [AutofillHints.creditCardNumber],
-            decoration: InputDecoration(labelText: 'UserId'),
+            autofillHints: const [AutofillHints.creditCardNumber],
+            decoration: const InputDecoration(labelText: 'UserId'),
             textInputAction: TextInputAction.done,
           ),
           TextButton(
@@ -87,7 +89,7 @@ class _ServicePostLearnState extends State<ServicePostLearn> {
                         _addItemToService(model);
                       }
                     },
-              child: Text('Send')),
+              child: const Text('Send')),
         ],
       ),
     );

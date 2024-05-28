@@ -5,6 +5,8 @@
 //   String body;
 // }
 
+// ignore_for_file: unused_field
+
 //herhangi bir variable'ı artık initialize etmek zorundayız.
 //initialize examples:
 //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
