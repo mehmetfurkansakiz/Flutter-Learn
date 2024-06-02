@@ -13,10 +13,7 @@ class ColorLearnView extends StatelessWidget {
         color: Theme.of(context).primaryColor,
         child: Text(
           'orange',
-          style: Theme.of(context)
-              .textTheme
-              .displayMedium
-              ?.copyWith(color: Theme.of(context).errorColor),
+          style: Theme.of(context).textTheme.displayMedium?.copyWith(color: Theme.of(context).cardColor),
         ),
       ),
     );
