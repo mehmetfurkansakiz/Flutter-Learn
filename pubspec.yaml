@@ -34,6 +34,10 @@ dependencies:
   # Google:
   url_launcher: ^6.2.6 
 
+  # Cache:
+  shared_preferences: ^2.2.3
+  flutter_secure_storage: ^9.2.2
+
   # Animation:
   flutter_spinkit: ^5.2.1
 

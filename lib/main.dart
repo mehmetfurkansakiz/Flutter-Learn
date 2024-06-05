@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learn/202/cache/secure_context/secure_context_learn.dart';
+import 'package:flutter_learn/202/cache/shared_learn_cache.dart';
+import 'package:flutter_learn/202/cache/shared_list_cache.dart';
 import 'package:flutter_learn/202/form_learn_view.dart';
 import 'package:flutter_learn/202/theme/light_theme.dart';
 
@@ -48,7 +51,7 @@ class MyApp extends StatelessWidget {
       //     systemOverlayStyle: SystemUiOverlayStyle.dark,
       //   ),
       // ),
-      home: const FormLearnView(),
+      home: const SecureContextLearn(),
     );
   }
 }
